@@ -7,7 +7,7 @@ const app = express();
 app.use(cors({
   origin: "https://ayushtaskmanagerapp.netlify.app",
   credentials: true, // only if using cookies/JWT in auth headers
-  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
   allowedHeaders: ["Content-Type", "Authorization"]
 }));
 app.use(express.json());
