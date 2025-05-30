@@ -79,7 +79,10 @@ npm start
 
 ## 🖥️ Screenshots
 
-> *(Add screenshots of your dashboard, login, registration, and task CRUD screens here)*
+![image](https://github.com/user-attachments/assets/44323cb7-9ae5-4b9a-9502-32509cbf49d3)
+![image](https://github.com/user-attachments/assets/50fe9e91-9ad0-4cf7-adf3-671e46f846f9)
+![image](https://github.com/user-attachments/assets/5252cfbe-6c9d-4311-8125-b7ac6ac33feb)
+
 
 ---
 
