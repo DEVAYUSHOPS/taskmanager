@@ -9,7 +9,7 @@ export const fetchTasks = createAsyncThunk(
   "tasks/fetch",
   async (_, { getState }) => {
     const token = getState().auth.token;
-    const res = await axios.get("/api/tasks", getAuthHeader(token));
+    const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/tasks`, getAuthHeader(token));
     return res.data;
   }
 );
@@ -18,7 +18,7 @@ export const addTask = createAsyncThunk(
   "tasks/add",
   async (data, { getState }) => {
     const token = getState().auth.token;
-    const res = await axios.post("/api/tasks", data, getAuthHeader(token));
+    const res = await axios.post(`${process.env.REACT_APP_API_URL}/api/tasks`, data, getAuthHeader(token));
     return res.data;
   }
 );
@@ -27,7 +27,7 @@ export const updateTask = createAsyncThunk(
   "tasks/update",
   async ({ id, data }, { getState }) => {
     const token = getState().auth.token;
-    const res = await axios.put(`/api/tasks/${id}`, data, getAuthHeader(token));
+    const res = await axios.put(`${process.env.REACT_APP_API_URL}/api/tasks/${id}`, data, getAuthHeader(token));
     return res.data;
   }
 );
@@ -37,7 +37,7 @@ export const toggleTaskStatus = createAsyncThunk(
   async (id, { getState }) => {
     const token = getState().auth.token;
     const res = await axios.patch(
-      `/api/tasks/${id}/status`,
+      `${process.env.REACT_APP_API_URL}/api/tasks/${id}/status`,
       {},
       getAuthHeader(token)
     );
@@ -49,7 +49,7 @@ export const deleteTask = createAsyncThunk(
   "tasks/delete",
   async (id, { getState }) => {
     const token = getState().auth.token;
-    await axios.delete(`/api/tasks/${id}`, getAuthHeader(token));
+    await axios.delete(`${process.env.REACT_APP_API_URL}/api/tasks/${id}`, getAuthHeader(token));
     return id;
   }
 );

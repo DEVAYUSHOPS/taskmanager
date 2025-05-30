@@ -4,12 +4,12 @@ import axios from "axios";
 const token = localStorage.getItem("token");
 
 export const login = createAsyncThunk("auth/login", async (data) => {
-  const res = await axios.post("/api/auth/login", data);
+  const res = await axios.post(`${process.env.REACT_APP_API_URL}/api/auth/login`, data);
   return res.data.token;
 });
 
-export const register = createAsyncThunk("auth/register", async (data) => {
-  const res = await axios.post("/api/auth/register", data);
+export const register = createAsyncThunk(`${process.env.REACT_APP_API_URL}auth/register`, async (data) => {
+  const res = await axios.post(`${process.env.REACT_APP_API_URL}/api/auth/register`, data);
   return res.data.token;
 });
 
