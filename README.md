@@ -4,6 +4,12 @@ A full-stack MERN (MongoDB, Express, React, Node.js) task manager with user auth
 
 ---
 
+## 🌐 Live Demo
+
+[View Live Site](https://ayushtaskmanagerapp.netlify.app/)
+
+---
+
 ## 🚀 Features
 
 - **User authentication:** Register and login with JWT.
@@ -141,6 +147,8 @@ Authorization: Bearer <token>
 - You can deploy the backend to [Render](https://render.com/) or [Heroku](https://heroku.com/).
 - Deploy the frontend to [Vercel](https://vercel.com/) or [Netlify](https://netlify.com/).
 - Update the frontend `proxy` or API URLs for production.
+
+- [![Netlify Status](https://api.netlify.com/api/v1/badges/5c4c16cc-2b9f-4986-aee0-4b8b2727da5a/deploy-status)](https://app.netlify.com/projects/ayushtaskmanagerapp/deploys)
 
 ---
 
